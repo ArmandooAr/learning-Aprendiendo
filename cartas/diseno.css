@@ -1,3 +1,11 @@
 body{
-    background-color: black;
+    background-color: rgb(29, 29, 29);
+}
+
+.cartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
