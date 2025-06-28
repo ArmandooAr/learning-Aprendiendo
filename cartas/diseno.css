@@ -2,10 +2,21 @@ body{
     background-color: rgb(29, 29, 29);
 }
 
+.titulo{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .cartas{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    width: 9%;
+    height: 15%;
+    margin: 20px;
+    border-radius: 5%;
 }
