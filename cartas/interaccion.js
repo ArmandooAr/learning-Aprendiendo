@@ -15,13 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
     "treesdediamantes.jpg", "treesdediamantes.jpg"
   ];
 
-  // Mezclador de cartas
-  for (let i = cartas.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [cartas[i], cartas[j]] = [cartas[j], cartas[i]];
-  }
-
-  // Generador de cartas
+  // generar cartas
   const mesa = document.querySelector('.mesa');
   mesa.innerHTML = '';
   cartas.forEach(nombre => {
