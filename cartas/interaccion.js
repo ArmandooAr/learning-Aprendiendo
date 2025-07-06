@@ -21,7 +21,6 @@ window.addEventListener('DOMContentLoaded', () => {
   cartas.forEach(nombre => { 
     const div = document.createElement("div"); 
     div.className = "cartas";
-      div.className = "forma";
     div.innerHTML = `
       <img src="imagenes/${nombre}" alt="${nombre}">
     `;

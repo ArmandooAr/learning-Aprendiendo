@@ -16,19 +16,16 @@ body {
 .mesa {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 10px;
-    height: 100px;
 }
 
 .cartas {
    margin: 10px;
-   width: 1px;
-    height: 1px;
+  
 }
 
-.forma{
-    width: 1px;
-    height: 1px;
+.forma > img {
+    width: 20px;
+    height: auto;
 }
 
