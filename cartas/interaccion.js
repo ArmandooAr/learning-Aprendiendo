@@ -15,12 +15,13 @@ window.addEventListener('DOMContentLoaded', () => {
     "treesdediamantes.jpg", "treesdediamantes.jpg"*/
   ];
 
-  // generar cartas
+
+ // generar cartas
   const mesa = document.querySelector(".mesa");
-  //mesa.innerHTML = '';
   cartas.forEach(nombre => { 
     const div = document.createElement("div"); 
-    div.className = "cartas2";
+    div.className = "cartas";
+      div.className = "forma";
     div.innerHTML = `
       <img src="imagenes/${nombre}" alt="${nombre}">
     `;
