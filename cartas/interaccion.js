@@ -1,8 +1,8 @@
+//lista de cartas
 window.addEventListener('DOMContentLoaded', () => {
-  // Lista de cartas
   const cartas = [
-    "As_corazones.png", "As_corazones.png",
-    "As_trebol.png", "As_trebol.png",
+    "As_corazones.png", "As_corazones.png"
+   /* "As_trebol.png", "As_trebol.png",
     "reydecorazones.png", "reydecorazones.png",
     "reynadetreboles.png", "reynadetreboles.png",
     "5depicas.jpg", "5depicas.jpg",
@@ -12,18 +12,17 @@ window.addEventListener('DOMContentLoaded', () => {
     "ochodepicas.jpg", "ochodepicas.jpg",
     "sietedepicas.jpg", "sietedepicas.jpg",
     "6dediamantes.jpg", "6dediamantes.jpg",
-    "treesdediamantes.jpg", "treesdediamantes.jpg"
+    "treesdediamantes.jpg", "treesdediamantes.jpg"*/
   ];
 
   // generar cartas
-  const mesa = document.querySelector('.mesa');
-  mesa.innerHTML = '';
-  cartas.forEach(nombre => {
-    const div = document.createElement('div');
-    div.className = 'cartas';
+  const mesa = document.querySelector(".mesa");
+  //mesa.innerHTML = '';
+  cartas.forEach(nombre => { 
+    const div = document.createElement("div"); 
+    div.className = "cartas2";
     div.innerHTML = `
-      <img src="imagenes/${nombre}" alt="${nombre}" class="cartaporfrente">
-      <img src="imagenes/img069.jpg" alt="Parte de atrás" class="cartayatras">
+      <img src="imagenes/${nombre}" alt="${nombre}">
     `;
     mesa.appendChild(div);
   });

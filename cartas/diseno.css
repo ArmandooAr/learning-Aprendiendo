@@ -9,37 +9,25 @@ body {
     margin-bottom: 20px;
 }
 
+.blanco {
+    color : white;
+    font-size: 200px;
+}
 .mesa {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    height: 100px;
 }
 
 .cartas {
-    width: 120px;
-    height: 180px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-    margin: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 2px 8px #0006;
-    display: inline-block;
+   margin: 10px;
+   width: 1px;
 }
 
-.cartas.volteada {
-    transform: rotateY(180deg);
+.forma{
+    width: 1px;
+    height: 1px;
 }
 
-.cartaporfrente, .cartayatras {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    object-fit: cover;
-}
