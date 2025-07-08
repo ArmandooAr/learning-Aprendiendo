@@ -27,3 +27,10 @@ window.addEventListener('DOMContentLoaded', () => {
     mesa.appendChild(div);
   });
 });
+
+// las cartasd de den vuelta
+document.querySelectorAll(".cartas").forEach((carta) => {
+  carta.addEventListener("click",() => {
+    carta.classList.toggle("voltear");
+  });
+});

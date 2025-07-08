@@ -29,3 +29,20 @@ body {
     height: auto;
 }
 
+
+.reverso {
+  background: white;
+  transform: rotateY(180deg);
+}
+
+.cartas.voltear .frente {
+  transform: rotateY(180deg);
+}
+
+.cartas.voltear .reverso {
+  transform: rotateY(0deg);
+}
+
+.cartas.voltear .reverso {
+  transform: rotateY(360deg);
+}
